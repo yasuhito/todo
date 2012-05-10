@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 
-TODO_FILE = File.join( File.dirname( __FILE__ ), "todo.txt" )
+TODO_FILE = File.join( File.dirname( File.readlink __FILE__ ), "todo.txt" )
 
 
 def read_todo line
